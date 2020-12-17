@@ -4,6 +4,8 @@ import About from './components/About/index';
 import Nav from './components/Nav/index';
 import Gallery from './components/Gallery/index';
 import ContactForm from './components/Contact/index';
+import Snowfall from 'react-snowfall'
+
 
 
 function App() {
@@ -31,6 +33,7 @@ function App() {
         setContactSelected={setContactSelected}
       ></Nav>
       <main>
+        <Snowfall />
         {!contactSelected ? (
           <>
             <Gallery currentCategory={currentCategory}></Gallery>
